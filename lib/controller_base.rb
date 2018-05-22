@@ -1,4 +1,3 @@
-require 'byebug'
 require 'active_support'
 require 'active_support/core_ext'
 require 'erb'
@@ -22,7 +21,6 @@ class ControllerBase
 
   def redirect_to(url)
     raise "double render errors" if already_built_response?
-
     @res.status = 302
     @res['Location'] = url
     @already_built_response = true
@@ -34,7 +32,6 @@ class ControllerBase
 
   def render_content(content, content_type)
     raise "double render errors" if already_built_response?
-
     @res.write(content)
     @res['Content-Type'] = content_type
     @already_built_response = true
@@ -46,7 +43,6 @@ class ControllerBase
 
 
   def render(template_name)
-
     dir_path = File.dirname(__FILE__)
     template_fname = File.join(
       dir_path, "..",
@@ -54,12 +50,10 @@ class ControllerBase
     )
 
     template_code = File.read(template_fname)
-
     render_content(
       ERB.new(template_code).result(binding),
       "text/html"
     )
-
   end
 
   def session
@@ -116,4 +110,5 @@ class ControllerBase
   def generate_authenticity_token
     SecureRandom.urlsafe_base64(16)
   end
+
 end
