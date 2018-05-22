@@ -15,9 +15,9 @@ require 'rack'
     # define the content type is html
     # compare 'text/text' is just a plain text
     # res.write("Hello World!!!!")
-    # res.write(req.path)
+    res.write(req.path)
     # using req.path can show the requested path
-    res.write("<h1>This is a html header!</h1>")
+    # res.write("<h1>This is a html header!</h1>")
     res.finish
   end
 
