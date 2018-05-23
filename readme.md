@@ -1,24 +1,28 @@
 MyFramework
 =====
 
-MyFramework is a lightweight MVC with a built-in ORM that allows you to make
-updates to a Postgres database without writing much SQL code. Sounds a
-little like Rails? Well, let's say MyFramework was *inspired* by Rails ;).
+MyFramework is a lightweight MVC (Model View Controller)framework written in Ruby and inspired by Rails.
 
-`MyFramework::ControllerBase`
+`ControllerBase`
 ---------------------
 
-`MyFramework::ControllerBase` connects your models to your routes, allowing
-access to the DB through html.erb views. It's how MyFramework takes over the Web.
+Features
 
-Router
+render(template_name): Render a template located in the app/views/<controller_name> directory.
+render_content(content, content_type): Render custom content with the specified content_type.
+redirect_to(url): Redirect to the passed URL.
+session: key/value pairs saved to this hash are saved as cookies.
+flash and flash.now: key/values pairs saved to this hash will persist through the next session and the current session only, respectively.
+By adding protect_from_forgery to your custom controller, MyFramework will check for an authenticity token in any submitted data. This token can be added to the forms in your views.
+
+`Router`
 ------
 
-Routes live in config/routes.rb. New routes are written using Regex.
-Open a server connection with the `puffs server` command.
+The Router allows the mapping of routes to your custom controllers.
 
-MyFramework Console
+`Rack Middleware`
 -------------
 
-Access your DB with `MyFramework::SQLObject` methods by simply entering
-`require 'puffs'` in Pry (or IRB).
+Exceptions provides a detailed error message for any errors, which is useful for development.
+
+StaticAssets allows the serving of static assets from the /public folder. Supported extensions are .jpg, .txt, .zip, and .html.
