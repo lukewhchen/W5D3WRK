@@ -1,6 +1,6 @@
 # MyFramework
 
-MyFramework is a lightweight MVC(Model View Controller) framework written in Ruby and inspired by Rails.
+MyFramework is a lightweight MVC framework developed in Ruby and inspired by Rails. MVC stands for Model-View—Controller. It’s a paradigm, allowing developers to factor out the various components of an application and more easily update them.
 
 ## ControllerBase
 
@@ -8,14 +8,14 @@ MyFramework is a lightweight MVC(Model View Controller) framework written in Rub
 
 - **render_content(content, content_type):** Render custom content with the specified content_type.
 
-- redirect_to(url): Redirect to the passed URL.
+- **redirect_to(url):** Redirect to the passed URL.
 
-- session: key/value pairs saved to this hash are saved as cookies.
+- **session:** key/value pairs saved to this hash are saved as cookies.
 
-- flash and flash.now: key/values pairs saved to this hash will persist through the next session and the current
+- **flash and flash.now:** key/values pairs saved to this hash will persist through the next session and the current
 session only, respectively.
 
-- By adding protect_from_forgery to your custom controller, MyFramework will check for an authenticity token in any submitted data. This token can be added to the forms in your views.
+- **protect_from_forgery:** MyFramework will check for an authenticity token in any submitted data. This token can be added to the forms in your views.
 
 ## Router
 
