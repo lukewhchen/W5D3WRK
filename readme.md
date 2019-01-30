@@ -21,6 +21,8 @@ session only, respectively.
 
 - The Router allows the mapping of routes to your custom controllers.
 
+  ![](https://github.com/lukewhchen/MyFramework/blob/master/docs/router.png)
+
 ## Rack Middleware
 
 - **Exceptions** provides a detailed error message for any errors, which is useful for development.
