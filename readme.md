@@ -5,8 +5,8 @@ MyFramework is a lightweight MVC framework developed with Ruby and inspired by R
 ## ControllerBase
 
 - **render(template_name):** Render a template located in the app/views/<controller_name> directory.
+
 ![](https://github.com/lukewhchen/MyFramework/blob/master/docs/render.png)
-![](https://github.com/lukewhchen/MyFramework/blob/17e72ed260b857cd9d3dcda59a9d62402559b9b2/lib/controller_base.rb#L45-L57)
 - **render_content(content, content_type):** Render custom content with the specified content_type.
 
 - **redirect_to(url):** Redirect to the passed URL.
