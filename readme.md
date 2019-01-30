@@ -19,7 +19,7 @@ session only, respectively.
 
 ## Router
 
-- The Router allows the mapping of routes to your custom controllers.
+- The **Router** allows the mapping of routes to your custom controllers.
 
   ![](https://github.com/lukewhchen/MyFramework/blob/master/docs/router.png)
 
