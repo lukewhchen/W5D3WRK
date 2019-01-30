@@ -26,3 +26,4 @@ session only, respectively.
 - **Exceptions** provides a detailed error message for any errors, which is useful for development.
 
 - **StaticAssets** allows the serving of static assets from the public folder. Supported extensions are .jpg, .txt, .zip, and .html.
+  ![](https://github.com/lukewhchen/MyFramework/blob/master/docs/rack.png)
