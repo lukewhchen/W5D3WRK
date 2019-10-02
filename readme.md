@@ -1,6 +1,6 @@
 # MyFramework
 
-MyFramework is a lightweight MVC framework developed with Ruby and inspired by Rails. MVC stands for Model-View—Controller. It’s a paradigm, allowing developers to factor out the various components of an application and more easily update them.
+MyFramework is a lightweight MVC framework developed with Ruby and inspired by Rails. MVC stands for Model-View-Controller. It’s a paradigm, allowing developers to factor out the various components of an application and more easily update them.
 
 ## ControllerBase
 
@@ -12,8 +12,7 @@ MyFramework is a lightweight MVC framework developed with Ruby and inspired by R
 
 - **session:** key/value pairs saved to this hash are saved as cookies.
 
-- **flash and flash.now:** key/values pairs saved to this hash will persist through the next session and the current
-session only, respectively.
+- **flash and flash.now:** key/values pairs saved to this hash will persist through the next session and the current session only, respectively.
 
 - **protect_from_forgery:** MyFramework will check for an authenticity token in any submitted data. This token can be added to the forms in your views.
 
