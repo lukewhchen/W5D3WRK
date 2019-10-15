@@ -26,6 +26,6 @@ MyFramework is a lightweight MVC framework developed with Ruby and inspired by R
 
 - **Exceptions** provides a detailed error message for any errors, which is useful for development.
 
-- **StaticAssets** allows the serving of static assets from the public folder. Supported extensions are jpg, txt, zip and html.
+- **StaticAssets** allows the serving of static assets from the public folder. Supported extensions included jpg, txt, zip, and HTML.
 
   ![](https://github.com/lukewhchen/MyFramework/blob/master/docs/rack.png)
