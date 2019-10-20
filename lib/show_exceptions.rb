@@ -59,4 +59,7 @@ class ShowExceptions
     Hash[*(start+1..(lines.count + start)).zip(lines).flatten]
   end
 
+  def format
+  end
+  
 end
